@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<Context>
+   
+  <WatchedResource>WEB-INF/web.xml</WatchedResource>
+
+
+  <Valve className="com.orangefunction.tomcat.redissessions.RedisSessionHandlerValve" />  
+
+  <Manager className="com.orangefunction.tomcat.redissessions.RedisSessionManager"  
+   host="193.168.11.14"
+   port="6379"  
+   database="0"  
+   maxInactiveInterval="60" /> 
+   
+</Context>
